@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZoomCar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="main.html"><img src="logo.png" alt="AZoomCar Logo"></a>
+            </div>
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="pricing.html#location">Locations</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="container">
+            <h1>Simply book and ride</h1>
+            </h1>
+            <p>Convenient, Flexible, and Affordable 24/7 mobility option</p>
+        </div>
+
+        <div class="row">
+            <div class="col-75">
+              <div class="container_rent">
+                <form id="rentalForm">
+                
+                  <div class="row">
+                    <div class="col-50">
+                      <h3>Billing Information</h3>
+                      <label for="name"><i class="fa fa-user"></i> Full Name</label>
+                      <input type="text" id="name" name="name" placeholder="Lauryn L">
+                      <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                      <input type="text" id="email" name="email" placeholder="lauryn@example.com">
+                      <label for="rentalPackage"></i> Rental Packge</label>
+                      <select id="rentalPackage" name="rentalPackage">
+                        <option value="Basic">Basic Plan</option>
+                        <option value="Standard">Standard Plan</option>
+                        <option value="Premium">Premium Plan</option>
+                      </select>
+                      <label for="carPark"> Designated Car Park</label>
+                      <select id="carPark" name="carPark">
+                        <option value="Wilson Parking">Wilson Parking</option>
+                        <option value="Car Park No.A0035">Car Park No.A0035</option>
+                        <option value="Angullia Park">Angullia Park</option>
+                      </select>          
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="reservationDateTime">Reservation Date Time</label>
+                          <input type="datetime-local" id="reservationDateTime" name="reservationDateTime">                        </div>
+                        <div class="col-50">
+                            <label for="phoneNumber">Contact No</label>
+                            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="+65">
+                          </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-50">
+                      <h3>Payment</h3>
+                      <label for="fname">Accepted Cards</label>
+                      <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                      </div>
+                      <label for="name">Name on Card</label>
+                      <input type="text" id="name" name="name" placeholder="Lauryn Lau">
+                      <label for="creditCardNumber">Credit card number</label>
+                      <input type="text" id="creditCardNumber" name="creditCardNumber" placeholder="1111-2222-3333-4444">
+                      <label for="expmonth">Exp Month</label>
+                      <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="expiryDate">Exp Year</label>
+                          <input type="text" id="expiryDate" name="expiryDate" placeholder="2018">
+                        </div>
+                        <div class="col-50">
+                          <label for="cvv">CVV</label>
+                          <input type="text" id="cvv" name="cvv" placeholder="352">
+                        </div>
+                      </div>
+                      <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> $200 deposit required
+                      </label>  
+                    </div>
+                  </div>
+                  <label>
+                    <input type="submit" value="Continue to make Reservation" class="btn" id="reserveButton">
+                </form>
+              </div>
+            </div>
+
+            <script src="script.js"></script>
+</body>
+</html>

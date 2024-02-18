@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.banner_main {
+    padding: 400px;
+    text-align: center;
+    background-image:url('background.png'); 
+    background-repeat:no-repeat; 
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+.banner_main h1 {
+    font-size: 86px;
+    margin-bottom: 20px;
+}
+
+.banner_main p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.container_main {
+    width:  800px;
+    margin: -300px -300px;
+    padding: 0 120px;
+}
+
+.container_rent {
+    background-color: #f2f2f2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    text-align: left;
+  }
+
+
+header {
+    background-color: #ffffff;
+    color: #210d0d;
+    padding: 40px;
+    font-size: 18px;
+}
+
+.logo img {
+    height: 100px;
+    float: right;
+    margin: -30px 210px 0 0;
+}
+.main-table {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 100px;;
+}
+
+.main-column {
+    flex-basis: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.main-column h2 {
+    color: #333;
+}
+
+.main-column img {
+    width: 160px;
+}
+
+.main-column h2 {
+    padding: 20px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #0057B8;
+    text-decoration: none;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 20px -16px;
+  }
+
+  .row h3 {
+    padding: 20px 0 20px 0;
+  }
+
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  input[type=datetime-local] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  select {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+
+  
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  a {
+    color: #2196F3;
+  }
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+
+.banner {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 86px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.bannerimg {
+    background-color: #F2F2F2;
+    opacity: 50%;
+    padding: 100px 0;
+    border-radius: 400px;
+    margin: 0 100px 0 100px;
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+.bannerimg h2 {
+    text-align: center;
+}
+
+.mycontainer div{
+    width: 100%;
+    overflow: auto;
+    padding: 0;
+    border-radius: 400px;
+}
+
+.btn1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0057B8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.features {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.feature {
+    margin-bottom: 40px;
+}
+
+.feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #0057B8;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+/* pricing css */
+
+.pricing-table {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.pricing-column {
+    flex-basis: 30%;
+    background-color: #f3f3f3;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.car-column img {
+    width: 350px;
+}
+
+.pricing-column h2 {
+    color: #333;
+}
+
+.price {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.map-column img {
+    width: 800px;
+}
+
+.parking-column {
+    flex-basis: 50%;
+    padding: 20px;
+    text-align: center;
+    margin: 50px;
+}
+
+.parking-column img {
+    width: 70px;
+}
+
+.contact-table {
+    display: flex;
+    margin-top: 100px;
+}
+
+.contact-column {
+    flex-basis: 50%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.contact-column button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.contact-column img {
+    width: 70px;
+}
+
+.pricing-column a {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* confirmation page */
+
+.confirm_container {
+    background-image:url('thankyou.gif'); 
+    background-repeat:repeat; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+.confirm_banner {
+    padding: 0 0;
+    text-align: center;
+}
+
+.confirm_banner h1 {
+    padding-top: 100px;
+    font-size: 86px;
+    margin-bottom: 20px;
+}
+
+.confirm_banner p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.confirm_rent {
+    background-color: #ffffff;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    text-align: left;
+
+}
